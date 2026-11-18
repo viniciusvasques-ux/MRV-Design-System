@@ -1925,6 +1925,13 @@ h2{margin:0 0 8px;font:700 28px/1.3 var(--font-outfit);letter-spacing:-.5px}
 .pb-cap{display:flex;justify-content:space-between;margin:0 0 6px;color:var(--text-secondary)}
 .pb-ctl{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
 @media(max-width:1023px){.pb-grid{grid-template-columns:1fr}}
+.top-end{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+a.ds-btn{text-decoration:none}
+.hero-cta{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:28px}
+.hero-cta small{color:var(--text-secondary);font-size:12px}
+.cta{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-top:64px;padding:32px;border-radius:var(--radius-600);background:var(--surface-raised);box-shadow:var(--shadow-sm)}
+.cta h2{margin:0 0 6px;font:700 24px/1.3 var(--font-outfit)}
+.cta p{margin:0;color:var(--text-secondary);max-width:60ch}
 </style>
 </head>
 <body>
@@ -1939,7 +1946,8 @@ h2{margin:0 0 8px;font:700 28px/1.3 var(--font-outfit);letter-spacing:-.5px}
       <path d="M131.652 23.9994C128.205 23.9994 125.397 22.8699 123.229 20.6111C121.061 18.3523 119.977 15.4819 119.977 12C119.977 8.51804 121.061 5.64767 123.229 3.38883C125.397 1.12998 128.205 0.00056076 131.652 0.00056076C135.012 0.00056076 137.793 1.11344 139.993 3.33923C142.194 5.56501 143.294 8.45193 143.294 12C143.294 15.548 142.194 18.4349 139.993 20.6607C137.793 22.8865 135.012 23.9994 131.652 23.9994ZM131.652 20.264C133.798 20.264 135.592 19.4817 137.034 17.917C138.476 16.3524 139.197 14.38 139.197 12C139.197 9.59788 138.476 7.62001 137.034 6.06637C135.592 4.51272 133.798 3.73591 131.652 3.73591C129.419 3.73591 127.592 4.52927 126.172 6.11597C124.752 7.70266 124.042 9.66399 124.042 12C124.042 14.3359 124.752 16.2973 126.172 17.884C127.592 19.4707 129.419 20.264 131.652 20.264Z" fill="currentColor"/>
       <path d="M81.5526 10.0125C81.5526 9.53809 81.7228 9.13579 82.0632 8.8059C82.3719 8.49214 82.7677 8.33525 83.2502 8.33525C83.7568 8.33525 84.1725 8.49214 84.4971 8.8059C84.8057 9.13579 84.9601 9.53809 84.9601 10.0125C84.9601 10.4553 84.8135 10.8614 84.5207 11.2315C84.1962 11.5936 83.6342 11.9397 82.8349 12.2695C82.4627 11.9074 82.1659 11.5253 81.9443 11.123C81.6833 10.7447 81.5526 10.3747 81.5526 10.0125ZM87.7975 22.0811L89.4002 23.8551H92.3211L89.4002 20.3191C89.8909 19.7801 90.3303 19.1725 90.7183 18.4966C91.106 17.8368 91.4228 17.1774 91.668 16.5176L89.4479 15.6244C89.1233 16.6783 88.6208 17.66 87.94 18.569L84.2475 14.0436C86.2106 13.0539 87.1761 11.7426 87.1447 10.1093C87.1288 9.00706 86.7725 8.06956 86.0758 7.29719C85.3795 6.52482 84.4376 6.13073 83.2502 6.1146C82.071 6.13073 81.1332 6.52482 80.4365 7.29719C79.7242 8.06956 79.368 9.00706 79.368 10.1093C79.368 10.7046 79.5105 11.284 79.7955 11.847C80.0407 12.4182 80.3733 12.9534 80.7927 13.4521C78.6081 14.6831 77.5079 16.3968 77.4923 18.5934C77.5079 20.0736 78.0185 21.3327 79.0238 22.3705C79.9971 23.4247 81.3111 23.9677 82.9656 24C83.8835 23.9839 84.7422 23.7947 85.5416 23.4326C86.3491 23.0707 87.1011 22.62 87.7975 22.0811ZM82.1817 15.1297L86.3609 20.2226C85.1657 21.2765 84.0064 21.7955 82.8822 21.7793C82.0115 21.7793 81.2676 21.4656 80.6502 20.8381C80.017 20.2425 79.6925 19.4863 79.6766 18.569C79.6608 17.2817 80.4959 16.1352 82.1817 15.1297Z" fill="currentColor"/>
     </svg>
-<button class="ds-btn" id="theme" type="button" aria-pressed="false"><span class="fontsize-x-semi" id="theme-l">Acender a luz</span><span class="ds-icon" id="theme-i" aria-hidden="true">light_mode</span></button>
+<div class="top-end"><a class="ds-btn ds-btn--light" href="biblioteca.html"><span class="fontsize-x-semi">Biblioteca completa</span><span class="ds-icon" aria-hidden="true">widgets</span></a>
+<button class="ds-btn" id="theme" type="button" aria-pressed="false"><span class="fontsize-x-semi" id="theme-l">Acender a luz</span><span class="ds-icon" id="theme-i" aria-hidden="true">light_mode</span></button></div>
 </header>
 
 <section class="hero">
@@ -1947,6 +1955,7 @@ h2{margin:0 0 8px;font:700 28px/1.3 var(--font-outfit);letter-spacing:-.5px}
 <span class="tag">DESIGN SYSTEM · MRV&amp;CO PRODUÇÃO</span>
 <h1>A nossa <span class="g">caixa de peças</span> para montar telas</h1>
 <p class="lead">Ninguém constrói um prédio inventando o tijolo toda segunda-feira. Com os apps e sistemas da MRV&amp;CO é igual: antes de desenhar uma tela, a gente abre a caixa e pega as peças que já existem.</p>
+<div class="hero-cta"><a class="ds-btn ds-btn--positive" href="biblioteca.html"><span class="fontsize-x-semi">Ver a biblioteca completa</span><span class="ds-icon" aria-hidden="true">arrow_forward</span></a><small>26 componentes, em light e dark, com todos os estados</small></div>
 </div>
 <aside class="hero-card" aria-label="Resumo rápido">
 <div class="bricks" aria-hidden="true"><i style="width:44px;background:var(--brand-primary-light)"></i><i style="width:28px;background:var(--brand-secondary-pure)"></i><i style="width:36px;background:var(--brand-feedback-alert)"></i><i style="width:20px;background:var(--brand-feedback-negative-dark)"></i></div>
@@ -2154,6 +2163,11 @@ h2{margin:0 0 8px;font:700 28px/1.3 var(--font-outfit);letter-spacing:-.5px}
 <div class="card"><div class="ico"><span class="ds-icon" aria-hidden="true">contrast</span></div><h3>De dia ou de noite</h3><p>Todas as cores têm versão para o tema escuro. Aperte o botão no topo da página e veja a casa mudar de clima.</p></div>
 </div>
 
+<section class="cta" aria-labelledby="cta-t">
+<div><h2 id="cta-t">Quer ver todas as peças de perto?</h2><p>A biblioteca mostra os 26 componentes do Design System, um por card, em light e dark, com variantes, estados e exemplos que respondem ao clique. A própria página foi montada com essas peças.</p></div>
+<a class="ds-btn ds-btn--positive" href="biblioteca.html"><span class="fontsize-x-semi">Abrir a biblioteca</span><span class="ds-icon" aria-hidden="true">arrow_forward</span></a>
+</section>
+
 <footer class="foot">
 <span>MRV&amp;CO Produção · Design System · Novembro de 2026</span>
 <span>Menos tijolo reinventado, mais obra entregue.</span>
@@ -2170,7 +2184,9 @@ h2{margin:0 0 8px;font:700 28px/1.3 var(--font-outfit);letter-spacing:-.5px}
     btn.setAttribute('aria-pressed', String(light));
     lab.textContent = light ? 'Apagar a luz' : 'Acender a luz';
     ico.textContent = light ? 'dark_mode' : 'light_mode';
+    try { localStorage.setItem('ds-theme', light ? 'light' : 'dark'); } catch (e) {}
   });
+  try { if (localStorage.getItem('ds-theme') === 'light') { btn.click(); try { localStorage.setItem('ds-theme', 'light'); } catch (e) {} } } catch (e) {}
 
   document.querySelectorAll('[data-say]').forEach(function (b) {
     b.addEventListener('click', function () { document.getElementById('say').textContent = b.getAttribute('data-say'); });
