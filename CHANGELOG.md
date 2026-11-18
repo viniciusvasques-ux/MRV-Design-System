@@ -1,6 +1,8 @@
 # Histórico
 
 ## 2026-11-18
+- Nova página `biblioteca.html`: biblioteca completa com os 26 componentes (um card por componente, em light e dark, com variantes e estados), filtro por grupo e tema compartilhado com a apresentação. A página usa o próprio Design System (cabeçalho, abas, cards, etiquetas e botões).
+- Apresentação: botão no topo, chamada no hero e faixa final apontando para a biblioteca.
 - Novo componente ProgressBar (grupo Feedback): barra de avanço de 8px com cor por faixa (vermelho a verde), estados em espera, em andamento e concluído, animação de preenchimento e de cor; token `size-progress-height`.
 - Novo componente Card (grupo Dados): padding de 16px, raio de 24px, 24px entre cards, sete modelos; token `size-card-min-width`.
 - Página de apresentação com a seção de Cards e a barra de avanço animada.
