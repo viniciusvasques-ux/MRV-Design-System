@@ -14,7 +14,9 @@
 [data-theme="dark"]{--brand-primary-dark:#54bc82;--brand-primary-pure:#54bc82;--brand-secondary-dark:#ffa952;--brand-secondary-pure:#ffa952;--brand-complementary-05:#ac41d8;--brand-complementary-07:#ff5aad;--brand-neutral-extra-dark:#fff;--brand-neutral-dark:#fff;--brand-neutral-mid-dark:#b0b0b0;--brand-neutral-medium:#969696;--brand-neutral-mid-light:#444;--brand-neutral-light:#2c2c2c;--brand-neutral-extra-light:#1a1a1a;--brand-feedback-negative-dark:#f4715d;--brand-feedback-light:#f4715d;--brand-background-opaque-01:#1c2320;--brand-background-opaque-02:#232120;--brand-background-opaque-03:#2c2c2c;--brand-background-opaque-04:#1f1f1f;--brand-background-opaque-05:#1a1a1a;--brand-background-translucent-01:#1c2320cc;--brand-background-translucent-02:#232120cc;--brand-background-translucent-03:#2c2c2ccc;--brand-background-translucent-04:#1f1f1fcc;--brand-background-translucent-05:#1a1a1acc;--brand-background-complementary-05:#ac41d826;--brand-background-complementary-07:#ff5aad26;--brand-background-feedback-negative-dark:#f4715d26;--brand-background-feedback-light:#f4715d26;--text-on-action:#1a1a1a;--feedback-positive-text:var(--brand-feedback-positive);--feedback-alert-text:var(--brand-feedback-alert);--feedback-negative-text:var(--brand-feedback-negative-dark);--surface-tooltip:#5d615fd9;--shadow-sm:0 0 2px rgba(0,0,0,.6);--shadow-md:0 2px 4px #00000099;--shadow-lg:0 4px 8px #000000b3;--shadow-inset:inset 0 1px 2px #000000b3;--shadow-focus:0 0 0 2px #1a1a1a,0 0 0 4px #54bc82;--shadow-popover:0 2px 10px #00000099;--shadow-tooltip:0 2px 8px 0 rgba(0,0,0,.4)}
 :root{--gap_small_xs:2px;--gap_small_s:4px;--gap_small_m:8px;--gap_small_l:12px;--gap_small_xl:16px;--gap_medium_xs:20px;--gap_medium_s:24px;--gap_medium_m:28px;--gap_medium_l:32px;--gap_medium_xl:36px;--gap_large_xs:40px;--gap_large_s:44px;--gap_large_m:48px;--radius-0:0;--radius-100:4px;--radius-200:8px;--radius-300:12px;--radius-400:16px;--radius-500:20px;--radius-600:24px;--radius-700:28px;--radius-800:32px;--radius-900:999px;--blur-sm:blur(8px);--blur-mid:blur(16px);--blur-lg:blur(24px);--blur-glass:blur(16px) saturate(160%);--border-0:0;--border-1:1px;--border-2:2px;--border-4:4px;--size-icon-s:16px;--size-icon-m:20px;--size-icon-l:24px;--size-icon-xl:32px;--size-control-s:32px;--size-control-m:40px;--size-control-l:48px;--size-touch-min:44px;--size-container-max:1200px;--size-field-width:416px;--size-field-min-width:96px;--size-chip-height:22px;--size-toggle-width:40px;--size-button-height:36px;--size-button-min-width:128px;--size-search-width:264px;--size-toast-min-width:240px;--size-toast-max-width:480px;--size-tooltip-width:196px;--size-tooltip-info-width:210px;--size-tooltip-detail-width:360px;--size-tooltip-list-max-height:128px;--size-menu-item-s:31px;--breakpoint-sm:640px;--breakpoint-md:768px;--breakpoint-lg:1024px;--breakpoint-xl:1280px;--opacity-hover:.08;--opacity-pressed:.12;--opacity-disabled:.4;--opacity-scrim:.5;--opacity-scrim-block:.25;--z-base:0;--z-dropdown:1000;--z-sticky:1100;--z-overlay:1200;--z-modal:1300;--z-toast:1400;--font-outfit:'Outfit',sans-serif;--font-mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;--font-icons:'Material Symbols Rounded',sans-serif;--text-fontsize-xs-regular:400 10px/1.5 var(--font-outfit);--text-fontsize-x-regular:400 12px/1.5 var(--font-outfit);--text-fontsize-m-regular:400 14px/1.5 var(--font-outfit);--text-fontsize-l-regular:400 16px/1.5 var(--font-outfit);--text-fontsize-xl-regular:400 18px/1.5 var(--font-outfit)}
 .fontsize-xs-regular{font:400 10px/1.5 var(--font-outfit)}.fontsize-xs-semi{font:600 10px/1.5 var(--font-outfit)}.fontsize-x-regular{font:400 12px/1.5 var(--font-outfit)}.fontsize-x-semi{font:600 12px/1.5 var(--font-outfit)}.fontsize-m-regular{font:400 14px/1.5 var(--font-outfit)}.fontsize-m-semi{font:600 14px/1.5 var(--font-outfit)}.fontsize-l-regular{font:400 16px/1.5 var(--font-outfit)}.fontsize-l-semi{font:600 16px/1.5 var(--font-outfit)}.fontsize-xl-regular{font:400 18px/1.5 var(--font-outfit)}.fontsize-xl-semi{font:600 18px/1.5 var(--font-outfit)}.fontsize-title-s-semi{font:600 24px/1.5 var(--font-outfit)}
+:root{--size-card-min-width:288px}.fontsize-title-s-heavy{font:800 24px/1.5 var(--font-outfit)}
 
+:root{--size-progress-height:8px}
 /* Formulários: TextField, Chip e Dropdown.
    Os valores vêm de tokens.json. As variáveis --ds-* só dão valor de reserva aos tokens
    criados depois da última geração de tokens.css (text-on-neutral, feedback-*-text,
@@ -45,6 +47,7 @@
   --ds-table-row-h: var(--size-table-row-height, 48px);
   --ds-table-head-h: var(--size-table-header-height, 36px);
   --ds-table-col-min: var(--size-table-column-min-width, 120px);
+  --ds-card-min-w: var(--size-card-min-width, 288px);
   --ds-btn-h: var(--size-button-height, 36px);
   --ds-btn-w: var(--size-button-min-width, 128px);
   --ds-search-w: var(--size-search-width, 264px);
@@ -1754,6 +1757,94 @@ select.ds-pager__box { cursor: pointer; }
 }
 @media (prefers-reduced-motion: reduce) { .ds-table__action { transition: none; } }
 
+/* ---------- Card (grupo Dados) ----------
+   Base flexível: padding de 16px (gap-small-xl), raio de 24px (radius-600), largura que se adapta à grade.
+   A grade (.ds-card-grid) espaça os cards em 24px (gap-medium-s); o card não tem margem própria. */
+.ds-card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, var(--ds-card-min-w)), 1fr)); gap: var(--ds-gap-medium-s); align-items: start; }
+.ds-card { display: flex; flex-direction: column; gap: var(--ds-gap-small-l); box-sizing: border-box; min-width: 0; padding: var(--ds-gap-small-xl); border: 0; border-radius: var(--radius-600); background: var(--surface-raised); box-shadow: var(--shadow-sm); color: var(--text-active); font-family: var(--font-outfit); }
+.ds-card *, .ds-card *::before, .ds-card *::after { box-sizing: border-box; }
+.ds-card__header { display: flex; align-items: center; gap: var(--ds-gap-small-l); }
+.ds-card__heading { display: flex; flex: 1; flex-direction: column; min-width: 0; }
+.ds-card__title { margin: 0; color: var(--text-active); overflow-wrap: anywhere; }
+.ds-card__title--brand { display: flex; align-items: center; gap: var(--ds-gap-small-m); color: var(--text-brand); }
+.ds-card__subtitle { margin: 0; color: var(--text-secondary); }
+.ds-card__icon-tile { display: inline-flex; flex: none; align-items: center; justify-content: center; width: var(--size-control-m, 40px); height: var(--size-control-m, 40px); border-radius: var(--radius-300); background: var(--feedback-positive-bg); color: var(--ds-pos-text); }
+.ds-card__action { display: inline-flex; flex: none; align-items: center; justify-content: center; width: var(--size-icon-l, 24px); height: var(--size-icon-l, 24px); padding: 0; border: 0; border-radius: var(--radius-100); background: none; color: var(--icon-active); cursor: pointer; transition: background-color var(--ds-transition); }
+.ds-card__action:hover { background: var(--brand-background-opaque-04); }
+.ds-card__action:focus-visible { outline: 0; box-shadow: var(--shadow-focus); }
+.ds-card__divider { flex: none; height: 0; margin: 0; border: 0; border-top: var(--border-1) solid var(--border-default); }
+.ds-card__row { display: flex; align-items: baseline; justify-content: space-between; gap: var(--ds-gap-small-xl); color: var(--text-secondary); }
+.ds-card__row > :first-child { color: var(--text-active); }
+.ds-card__split { display: flex; justify-content: space-between; gap: var(--ds-gap-small-xl); }
+.ds-card__split > * { display: flex; flex-direction: column; gap: var(--ds-gap-small-s); min-width: 0; }
+.ds-card__split > :last-child { text-align: right; align-items: flex-end; }
+.ds-card__label { margin: 0; color: var(--text-active); }
+.ds-card__value { margin: 0; color: var(--text-secondary); }
+.ds-card__field { display: flex; flex-wrap: wrap; gap: var(--ds-gap-small-s); margin: 0; color: var(--text-active); }
+.ds-card__field > dt { font-weight: 600; }
+.ds-card__field > dd { margin: 0; }
+.ds-card__stat { margin: 0; color: var(--text-active); }
+.ds-card__media { position: relative; overflow: hidden; border-radius: var(--radius-400); background: var(--surface-disabled); aspect-ratio: 16 / 9; }
+.ds-card__media > img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.ds-card__flag { position: absolute; top: 0; right: var(--ds-gap-small-xl); display: inline-flex; align-items: center; justify-content: center; width: var(--size-control-m, 40px); height: var(--size-control-l, 48px); border-radius: 0 0 var(--radius-200) var(--radius-200); background: var(--brand-complementary-05); color: var(--ds-white); }
+.ds-card__note { display: flex; align-items: center; justify-content: center; min-height: var(--ds-btn-h); padding: 0 var(--ds-gap-small-l); border-radius: var(--radius-200); background: var(--surface-base); color: var(--ds-pos-text); text-align: center; }
+.ds-card__delta { display: inline-flex; align-items: center; align-self: flex-start; gap: var(--ds-gap-small-m); padding: var(--ds-gap-small-s) var(--ds-gap-small-m); border-radius: var(--radius-200); background: var(--surface-base); color: var(--text-secondary); }
+.ds-card__delta > b { display: inline-flex; align-items: center; gap: var(--ds-gap-small-s); color: var(--ds-pos-text); font-weight: 400; }
+.ds-card__delta--negative > b { color: var(--ds-neg-text); }
+.ds-card__badge { display: inline-flex; align-items: center; align-self: flex-start; gap: var(--ds-gap-small-m); height: 28px; padding: 0 var(--ds-gap-small-xl); border-radius: var(--radius-900); background: var(--brand-complementary-05); color: var(--ds-white); }
+.ds-card__badge--positive { background: var(--action-primary); color: var(--text-on-action); }
+.ds-card__badge--alert { background: var(--feedback-alert-bg); color: var(--text-active); }
+.ds-card__badge--alert::before { content: ""; width: var(--size-icon-m, 20px); height: var(--ds-gap-small-m); border-radius: var(--radius-900); background: linear-gradient(90deg, var(--brand-secondary-pure), var(--brand-feedback-alert)); }
+.ds-card__pills { display: flex; flex-wrap: wrap; gap: var(--ds-gap-small-m); }
+.ds-card__pill { display: inline-flex; align-items: center; height: 28px; padding: 0 var(--ds-gap-small-l); border-radius: var(--radius-900); background: var(--surface-disabled); color: var(--text-active); }
+.ds-card__meter-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--ds-gap-small-xl); }
+.ds-card__bar { --v: 50; position: relative; flex: none; width: 100%; height: var(--ds-gap-small-m); border-radius: var(--radius-900); background: var(--surface-disabled); overflow: hidden; }
+.ds-card__bar::after { content: ""; position: absolute; inset: 0 auto 0 0; width: calc(var(--v) * 1%); border-radius: var(--radius-900); background: linear-gradient(90deg, var(--brand-secondary-pure), var(--brand-feedback-alert)); }
+.ds-card__bar--positive::after { background: linear-gradient(90deg, var(--brand-feedback-alert), var(--brand-complementary-02)); }
+.ds-card__meter { display: flex; align-items: center; gap: var(--ds-gap-small-l); color: var(--icon-active); }
+.ds-card__meter > .ds-card__bar { flex: 1; width: auto; }
+.ds-card__table { width: 100%; border: var(--border-1) solid var(--border-default); border-radius: var(--radius-400); border-collapse: separate; border-spacing: 0; overflow: hidden; }
+.ds-card__table th, .ds-card__table td { padding: var(--ds-gap-small-m); text-align: right; font-weight: 400; color: var(--text-active); }
+.ds-card__table th:first-child, .ds-card__table td:first-child { text-align: left; font-weight: 600; }
+.ds-card__table thead th { font-weight: 400; color: var(--text-secondary); }
+.ds-card__table tfoot td { border-top: var(--border-1) solid var(--border-default); font-weight: 600; }
+.ds-card__footer { display: flex; align-items: center; gap: var(--ds-gap-small-l); margin-top: auto; padding-top: var(--ds-gap-small-s); }
+.ds-card__footer > .ds-btn { flex: 1 1 0; min-width: 0; }
+
+/* ProgressBar: barra de avanço com evolução de cor por faixa */
+@property --ds-progress-from { syntax: "<color>"; inherits: true; initial-value: #f4715d; }
+@property --ds-progress-to { syntax: "<color>"; inherits: true; initial-value: #ffa952; }
+.ds-progress {
+  --v: 0;
+  --ds-progress-h: var(--size-progress-height, 8px);
+  --ds-progress-dur: 0.6s;
+  --ds-progress-from: var(--brand-feedback-negative-mid);
+  --ds-progress-to: var(--brand-secondary-light);
+  display: flex; flex-direction: column; gap: var(--ds-gap-small-l); width: 100%; color: var(--text-active);
+  transition: --ds-progress-from var(--ds-progress-dur) ease, --ds-progress-to var(--ds-progress-dur) ease;
+}
+.ds-progress[data-level="low"] { --ds-progress-from: var(--brand-feedback-negative-mid); --ds-progress-to: var(--brand-secondary-light); }
+.ds-progress[data-level="medium"] { --ds-progress-from: var(--brand-secondary-light); --ds-progress-to: var(--brand-complementary-04); }
+.ds-progress[data-level="high"] { --ds-progress-from: var(--brand-complementary-04); --ds-progress-to: var(--brand-complementary-02); }
+.ds-progress[data-level="full"] { --ds-progress-from: var(--brand-complementary-02); --ds-progress-to: var(--brand-primary-pure); }
+.ds-progress__head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--ds-gap-small-xl); }
+.ds-progress__value { color: var(--text-secondary); font-variant-numeric: tabular-nums; }
+.ds-progress__row { display: flex; align-items: center; gap: var(--ds-gap-small-xl); }
+.ds-progress__track { position: relative; flex: 1; min-width: 0; height: var(--ds-progress-h); border-radius: var(--radius-900); background: var(--surface-disabled); overflow: hidden; }
+.ds-progress__fill { position: absolute; inset: 0 auto 0 0; width: calc(var(--v) * 1%); min-width: var(--ds-progress-h); border-radius: var(--radius-900); background: linear-gradient(90deg, var(--ds-progress-from), var(--ds-progress-to)); transition: width var(--ds-progress-dur) cubic-bezier(0.4, 0, 0.2, 1); }
+.ds-progress[data-level="empty"] .ds-progress__fill { background: var(--brand-neutral-mid-light); }
+.ds-progress--waiting .ds-progress__fill { animation: ds-progress-wait 1.4s ease-in-out infinite; }
+.ds-progress__action { display: inline-flex; flex: none; align-items: center; justify-content: center; width: var(--size-icon-m, 20px); height: var(--size-icon-m, 20px); padding: 0; border: 0; border-radius: var(--radius-100); background: none; color: var(--icon-active); }
+button.ds-progress__action { cursor: pointer; transition: background-color var(--ds-transition); }
+button.ds-progress__action:hover { background: var(--brand-background-opaque-04); }
+button.ds-progress__action:focus-visible { outline: 0; box-shadow: var(--shadow-focus); }
+@keyframes ds-progress-wait { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+@media (prefers-reduced-motion: reduce) {
+  .ds-progress { transition: none; }
+  .ds-progress__fill { transition: none; }
+  .ds-progress--waiting .ds-progress__fill { animation: none; }
+}
+
 /* ===== Layout da página (usa só tokens do DS) ===== */
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -1819,6 +1910,21 @@ h2{margin:0 0 8px;font:700 28px/1.3 var(--font-outfit);letter-spacing:-.5px}
 @media(max-width:1023px){.hero{grid-template-columns:1fr}.grid5,.sw-grid{grid-template-columns:repeat(3,1fr)}.screens,.grid3{grid-template-columns:1fr}}
 @media(max-width:599px){.wrap{padding:20px 16px 56px}.grid5,.sw-grid{grid-template-columns:1fr 1fr}.grid2{grid-template-columns:1fr}.type{grid-template-columns:1fr}.aa{font-size:96px}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.card:hover{transform:none}}
+.cd-wrap{margin-top:16px}.cd-wrap h3{margin:0 0 6px;font:600 18px var(--font-outfit)}
+.cd-cap{margin:0 0 8px;color:var(--text-secondary)}
+.cd-ph{display:grid;place-items:center;width:100%;height:100%;background:linear-gradient(135deg,var(--brand-background-feedback-positive),var(--brand-background-feedback-alert));color:var(--text-secondary)}
+.cd-guide{display:flex;flex-wrap:wrap;gap:16px 24px;align-items:center;margin:14px 0 24px}
+.cd-box{position:relative;display:grid;place-items:center;width:232px;height:128px;border:1px dashed var(--border-strong);border-radius:var(--radius-600)}
+.cd-box>i{position:absolute;inset:16px;border:1px dashed var(--text-brand);background:var(--brand-background-feedback-positive);border-radius:var(--radius-200);display:grid;place-items:center;font-style:normal;color:var(--text-secondary)}
+.cd-box>b{position:absolute;top:-1px;font-weight:600;color:var(--text-brand);background:var(--surface-base);padding:0 4px}
+.pb-panel{display:flex;flex-direction:column;gap:20px;padding:24px;border-radius:var(--radius-600);background:var(--surface-raised);box-shadow:var(--shadow-sm)}
+.pb-scheme{display:flex;flex-wrap:wrap;gap:8px 16px;margin:14px 0 16px;padding:0;list-style:none}
+.pb-scheme li{display:flex;align-items:center;gap:8px;color:var(--text-secondary)}
+.pb-scheme i{width:48px;height:8px;border-radius:var(--radius-900);background:linear-gradient(90deg,var(--f),var(--t))}
+.pb-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+.pb-cap{display:flex;justify-content:space-between;margin:0 0 6px;color:var(--text-secondary)}
+.pb-ctl{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+@media(max-width:1023px){.pb-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -1850,7 +1956,7 @@ h2{margin:0 0 8px;font:700 28px/1.3 var(--font-outfit);letter-spacing:-.5px}
 
 <div class="sec"><span class="n">01 ·</span> O CONTEÚDO DA CAIXA, EM NÚMEROS</div>
 <div class="grid5">
-<div class="card"><div class="big">24</div><h3>peças prontas</h3><p>De botões a tabelas e janelas. Montou uma vez, usa em qualquer lugar.</p></div>
+<div class="card"><div class="big">26</div><h3>peças prontas</h3><p>De botões a tabelas e janelas. Montou uma vez, usa em qualquer lugar.</p></div>
 <div class="card"><div class="big">2</div><h3>temas</h3><p>Claro e escuro. É só apertar o botão lá em cima para ver.</p></div>
 <div class="card"><div class="big">1</div><h3>letra da casa</h3><p>A Outfit: redonda, simpática e fácil de ler em tela pequena.</p></div>
 <div class="card"><div class="big">3</div><h3>tamanhos de tela</h3><p>Celular, tablet e computador, cada um com sua grade de colunas.</p></div>
@@ -2017,6 +2123,19 @@ h2{margin:0 0 8px;font:700 28px/1.3 var(--font-outfit);letter-spacing:-.5px}
 <span class="fontsize-x-semi" id="stage-say" role="status" aria-live="polite" style="color:var(--text-brand)"></span>
 </div>
 <div class="drawer-stage" id="stage"><div class="stage-note fontsize-x-regular">A página continua visível e clicável com o drawer aberto.<div class="stage-ph">Conteúdo da página</div><div class="stage-ph">Conteúdo da página</div><div class="stage-ph">Conteúdo da página</div></div></div>
+</div>
+
+<div class="cd-wrap">
+<h3>Cards</h3><p class="small">Sete jeitos de montar a mesma caixa: 16 px de respiro por dentro, cantos de 24 px e 24 px de vão entre um card e outro. A grade decide sozinha quantas colunas cabem; cada coluna tem pelo menos 288 px. Redimensione a janela e veja.</p>
+<div class="cd-guide"><div class="cd-box"><b class="fontsize-x-semi">24 (vão entre cards)</b><i class="fontsize-x-regular">conteúdo · 16 px</i></div></div>
+<div class="ds-card-grid" id="cards-root"></div>
+</div>
+
+<div class="cd-wrap" style="margin-top:32px">
+<h3>Barra de avanço</h3><p class="small">A cor acompanha o progresso: nasce vermelha, esquenta para laranja, vira amarela e termina verde. Cada faixa tem o seu degradê, e a cor muda suavemente quando o valor cruza de uma faixa para a outra. Com 0%, aparece só uma bolinha cinza. Aperte Reiniciar e acompanhe.</p>
+<ul class="pb-scheme fontsize-x-regular" id="pb-scheme"></ul>
+<div class="pb-grid"><div class="pb-panel" id="pb-static"></div><div class="pb-panel"><div id="pb-demo"></div>
+<div class="pb-ctl"><button type="button" class="ds-btn ds-btn--light" id="pb-replay"><span class="fontsize-x-semi">Reiniciar</span><span class="ds-icon" aria-hidden="true">replay</span></button><button type="button" class="ds-btn ds-btn--light" id="pb-pause" aria-pressed="false"><span class="fontsize-x-semi" id="pb-pause-l">Pausar</span><span class="ds-icon" aria-hidden="true" id="pb-pause-i">pause</span></button></div></div></div>
 </div>
 
 <div class="sec"><span class="n">06 ·</span> UM SISTEMA, TRÊS TAMANHOS DE TELA</div>
@@ -2201,6 +2320,84 @@ h2{margin:0 0 8px;font:700 28px/1.3 var(--font-outfit);letter-spacing:-.5px}
     var c = parseInt(g.getAttribute('data-n'), 10);
     for (var i = 0; i < c; i++) g.appendChild(document.createElement('i'));
   });
+})();
+</script>
+<script>
+(function(){
+  function ic(n, c) { return '<span class="ds-icon ' + (c || '') + '" aria-hidden="true">' + n + '</span>'; }
+  function btn(label, icon, cls, aria) {
+    return '<button type="button" class="ds-btn ' + (cls || 'ds-btn--light') + '"' + (aria ? ' aria-label="' + aria + '"' : '') + '>' + (label ? '<span class="fontsize-x-semi">' + label + '</span>' : '') + (icon ? ic(icon) : '') + '</button>';
+  }
+  function field(l, v) { return '<dl class="ds-card__field fontsize-x-regular"><dt>' + l + ':</dt><dd>' + v + '</dd></dl>'; }
+  var cards = [
+    { cap: 'Checklist (pares rótulo e valor, ações só com ícone)', html:
+      '<div class="ds-card__row fontsize-x-regular"><span class="fontsize-x-semi">VQ - Checklist da Qualidade</span></div>' +
+      '<div class="ds-card__row fontsize-x-regular"><span>QPE</span><span>1.0.0</span></div><hr class="ds-card__divider">' +
+      '<div class="ds-card__split fontsize-x-regular"><div><p class="ds-card__label fontsize-x-semi">Empreendimento</p><p class="ds-card__value">Residencial Ipê</p></div><div><p class="ds-card__label fontsize-x-semi">Planos de Ação</p><p class="ds-card__value">2 planos ativos</p></div></div>' +
+      '<div class="ds-card__footer">' + btn('', 'delete_forever', 'ds-btn--negative ds-btn--light ds-btn--pill', 'Excluir') + btn('', 'link', 'ds-btn--light ds-btn--pill', 'Copiar link') + btn('', 'edit_note', 'ds-btn--light ds-btn--pill', 'Editar') + '</div>' },
+    { cap: 'KPI (ícone, valor em destaque e variação)', html:
+      '<div class="ds-card__header"><span class="ds-card__icon-tile">' + ic('attach_money') + '</span><div class="ds-card__heading"><p class="ds-card__subtitle fontsize-x-regular" style="margin-top:8px">Forecast Jan.26</p></div></div>' +
+      '<p class="ds-card__stat fontsize-title-s-heavy">R$ 12.4M</p>' +
+      '<div class="ds-card__delta fontsize-x-regular"><b>' + ic('arrow_upward', 'ds-icon--s') + '+12%</b><span>vs mês ant.</span></div>' },
+    { cap: 'Peça (imagem, bandeira e nota de destaque)', html:
+      '<div class="ds-card__media"><div class="cd-ph fontsize-x-regular">imagem da peça</div><span class="ds-card__flag">' + ic('home') + '</span></div>' +
+      '<p class="ds-card__title fontsize-m-semi">Salão de Festas 02</p>' + field('Composição', 'Salão de Festas + Sanitário') + field('Linha', 'MCMV') +
+      '<div class="ds-card__note fontsize-x-regular">Custo médio R$83k</div>' },
+    { cap: 'Medidor de avanço (barra, rótulo de estado e ação)', html:
+      '<div class="ds-card__meter-head"><span class="ds-card__title fontsize-l-regular">ASC</span><span class="fontsize-l-regular">50%</span></div>' +
+      '<div class="ds-card__bar" style="--v:50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="Avanço da ASC"></div>' +
+      '<span class="ds-card__badge ds-card__badge--alert fontsize-x-regular">Medição de avanço em rascunho</span>' +
+      '<div class="ds-card__footer">' + btn('Avanço detalhado', 'bar_chart', 'ds-btn--light') + '</div>' },
+    { cap: 'Obra (ícone, status, dados e etiquetas)', html:
+      '<div class="ds-card__header"><span class="ds-card__icon-tile">' + ic('apartment') + '</span><div class="ds-card__heading"><p class="ds-card__title fontsize-m-semi" style="margin-top:2px">Residencial Jardim das Flores</p><p class="ds-card__subtitle fontsize-x-regular">São Paulo, SP</p></div><button type="button" class="ds-card__action" aria-label="Configurar">' + ic('settings') + '</button></div><hr class="ds-card__divider">' +
+      '<span class="ds-card__badge fontsize-x-regular">VA Liberada</span>' +
+      '<div class="ds-card__pills fontsize-x-regular" style="gap:16px"><span>' + '<b class="fontsize-x-semi" style="font-weight:600">Tipo:</b> Bloco</span><span><b style="font-weight:600">Blocos:</b> 4</span><span><b style="font-weight:600">Unidades:</b> 120</span></div>' +
+      '<p class="ds-card__label fontsize-x-regular">Tipologias configuradas:</p><div class="ds-card__pills fontsize-x-semi"><span class="ds-card__pill">3QVS</span><span class="ds-card__pill">1QV</span><span class="ds-card__pill">1QV</span></div>' },
+    { cap: 'Fornecedor (título com ícone, status, tabela e ação)', html:
+      '<p class="ds-card__title ds-card__title--brand fontsize-l-semi">' + ic('apartment') + 'Residencial Mata dos Cardeais</p>' +
+      '<div class="fontsize-x-regular"><div>Belo Horizonte</div><div>Minas Gerais</div></div><hr class="ds-card__divider">' +
+      '<p class="ds-card__label fontsize-x-semi">Status da obra</p><span class="ds-card__badge ds-card__badge--positive fontsize-x-regular">Em andamento</span>' +
+      '<table class="ds-card__table fontsize-x-regular"><thead><tr><th></th><th>m2</th><th>m</th><th>un.</th></tr></thead><tbody>' +
+      '<tr><td>Alumínio</td><td>2.500,00</td><td>3.120,00</td><td>3.400,00</td></tr><tr><td>SSG</td><td>1.250,00</td><td>9.800,00</td><td>2.900,00</td></tr><tr><td>Acessório</td><td>4.700,00</td><td>1.650,00</td><td>4.300,00</td></tr></tbody>' +
+      '<tfoot><tr><td>Total</td><td>8.450,00</td><td>14.570,00</td><td>10.600,00</td></tr></tfoot></table>' +
+      '<div class="ds-card__footer">' + btn('Ver estoque', 'chevron_right', 'ds-btn--light') + '</div>' },
+    { cap: 'Hub (medidores de ocupação, tabela e ação)', html:
+      '<p class="ds-card__title ds-card__title--brand fontsize-l-semi">' + ic('warehouse') + 'Camaçari</p><p class="ds-card__subtitle fontsize-x-regular" style="margin-top:-8px">Bahia</p><hr class="ds-card__divider">' +
+      '<div class="ds-card__meter-head fontsize-x-regular"><span>Posições (ocupação)</span><span style="color:var(--text-secondary)">200 | 400</span></div>' +
+      '<div class="ds-card__meter">' + ic('inventory_2') + '<div class="ds-card__bar ds-card__bar--positive" style="--v:50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="Posições ocupadas"></div></div>' +
+      '<div class="ds-card__meter-head fontsize-x-regular"><span>Capacidade (ocupação)</span></div>' +
+      '<div class="ds-card__meter">' + ic('square_foot') + '<div class="ds-card__bar" style="--v:75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Capacidade ocupada"></div></div>' +
+      '<table class="ds-card__table fontsize-x-regular"><thead><tr><th></th><th>m2</th><th>m</th><th>un.</th></tr></thead><tbody>' +
+      '<tr><td>Alumínio</td><td>2.500,00</td><td>3.120,00</td><td>3.400,00</td></tr><tr><td>SSG</td><td>1.250,00</td><td>9.800,00</td><td>2.900,00</td></tr><tr><td>Acessório</td><td>4.700,00</td><td>1.650,00</td><td>4.300,00</td></tr></tbody>' +
+      '<tfoot><tr><td>Total</td><td>8.450,00</td><td>14.570,00</td><td>10.600,00</td></tr></tfoot></table>' +
+      '<div class="ds-card__footer">' + btn('Ver posições', 'chevron_right', 'ds-btn--light') + '</div>' }
+  ];
+
+  document.getElementById('cards-root').innerHTML=cards.map(function(c){return '<div><p class="cd-cap fontsize-xs-semi">'+c.cap+'</p><article class="ds-card">'+c.html+'</article></div>';}).join('');
+})();
+</script>
+<script>
+(function(){
+  function ic(n){return '<span class="ds-icon" aria-hidden="true">'+n+'</span>';}
+  function level(v){return v<=0?'empty':v<=25?'low':v<=50?'medium':v<=75?'high':'full';}
+  function bar(id,label,v,txt,action,extra){return '<div class="ds-progress'+(extra||'')+'" data-level="'+level(v)+'" style="--v:'+v+'" id="'+id+'"><div class="ds-progress__head fontsize-x-regular"><span id="'+id+'-l">'+label+'</span><span class="ds-progress__value" data-out>'+txt+'</span></div><div class="ds-progress__row"><div class="ds-progress__track" role="progressbar" aria-labelledby="'+id+'-l" aria-valuemin="0" aria-valuemax="100" aria-valuenow="'+v+'" aria-valuetext="'+txt+'"><div class="ds-progress__fill"></div></div>'+(action||'')+'</div></div>';}
+  var cancel='<button type="button" class="ds-progress__action" aria-label="Cancelar">'+ic('close')+'</button>',wait='<span class="ds-progress__action" aria-hidden="true">'+ic('arrow_downward')+'</span>',done='<span class="ds-progress__action" aria-hidden="true">'+ic('check')+'</span>';
+  var s=[['0%','var(--brand-neutral-mid-light)','var(--brand-neutral-mid-light)','vazio'],['1 a 25%','var(--brand-feedback-negative-mid)','var(--brand-secondary-light)','vermelho a laranja'],['26 a 50%','var(--brand-secondary-light)','var(--brand-complementary-04)','laranja a amarelo'],['51 a 75%','var(--brand-complementary-04)','var(--brand-complementary-02)','amarelo a verde-claro'],['76 a 100%','var(--brand-complementary-02)','var(--brand-primary-pure)','verde-claro a verde']];
+  document.getElementById('pb-scheme').innerHTML=s.map(function(x){return '<li><i style="--f:'+x[1]+';--t:'+x[2]+'"></i>'+x[0]+' · '+x[3]+'</li>';}).join('');
+  document.getElementById('pb-static').innerHTML=[0,24,50,75,100].map(function(v,i){return bar('pbs'+i,'Avanço',v,v+'%');}).join('')+bar('pbw','Dados em sincronia',0,'Em espera',wait,' ds-progress--waiting');
+  var demo=document.getElementById('pb-demo'),v=0,state='wait',paused=false,hold=0;
+  function paint(){var txt=state==='wait'?'Em espera':state==='done'?'Concluído':Math.round(v)+'%',act=state==='wait'?wait:state==='done'?done:cancel;
+    if(!demo.firstChild){demo.innerHTML=bar('pbd','Dados em sincronia',0,txt,act);}
+    var el=document.getElementById('pbd');el.classList.toggle('ds-progress--waiting',state==='wait');el.dataset.level=level(v);el.style.setProperty('--v',v);
+    var t=el.querySelector('.ds-progress__track');t.setAttribute('aria-valuenow',Math.round(v));t.setAttribute('aria-valuetext',txt);el.querySelector('[data-out]').textContent=txt;
+    var old=el.querySelector('.ds-progress__action'),tmp=document.createElement('div');tmp.innerHTML=act;if(old.outerHTML!==tmp.firstChild.outerHTML){old.replaceWith(tmp.firstChild);}}
+  function reset(){v=0;state='wait';hold=3;paint();}
+  function tick(){if(paused)return;if(state==='wait'){if(--hold<=0){state='run';}paint();return;}
+    if(state==='run'){v=Math.min(100,v+4+Math.random()*10);if(v>=100){v=100;state='done';hold=5;}paint();return;}if(--hold<=0){reset();}}
+  demo.addEventListener('click',function(e){if(e.target.closest('button.ds-progress__action')){reset();}});
+  document.getElementById('pb-replay').addEventListener('click',reset);
+  document.getElementById('pb-pause').addEventListener('click',function(){paused=!paused;this.setAttribute('aria-pressed',paused);document.getElementById('pb-pause-l').textContent=paused?'Continuar':'Pausar';document.getElementById('pb-pause-i').textContent=paused?'play_arrow':'pause';});
+  reset();setInterval(tick,450);
 })();
 </script>
 </body>
