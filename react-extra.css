@@ -1,0 +1,26 @@
+/* Complementos da camada React (não fazem parte do bundle.css): Select e PageGrid. */
+.ds-select { position: relative; }
+.ds-select__panel { position: absolute; top: calc(100% + var(--ds-gap-small-s, 4px)); left: 0; right: 0; z-index: var(--z-dropdown, 20); }
+.ds-select__panel > .ds-menu { width: auto; }
+.ds-select .ds-field__box, .ds-select .ds-field__input { cursor: pointer; text-overflow: ellipsis; }
+.ds-select .ds-field__icon { transition: transform .15s; }
+.ds-select.is-open .ds-field__icon { transform: rotate(180deg); }
+.ds-search > .ds-menu { position: absolute; top: calc(100% + var(--ds-gap-small-s, 4px)); left: 0; z-index: var(--z-dropdown, 20); }
+
+/* Grade da página (valores do guia do Grid: gutter, margens e colunas por breakpoint) */
+.ds-page-grid {
+  --ds-pg-gut: var(--size-grid-gutter-mobile, 12px); --ds-pg-mx: var(--size-page-margin-mobile, 16px);
+  --ds-pg-my: var(--size-page-margin-block-mobile, 12px); --ds-pg-cols: 4;
+  display: grid; grid-template-columns: repeat(var(--ds-pg-cols), minmax(0, 1fr)); gap: var(--ds-pg-gut);
+  max-width: var(--size-container-max, 1440px); margin: 0 auto; padding: var(--ds-pg-my) var(--ds-pg-mx); box-sizing: border-box;
+}
+.ds-page-grid__col { grid-column: 1 / -1; min-width: 0; }
+@media (min-width: 600px) {
+  .ds-page-grid { --ds-pg-gut: var(--size-grid-gutter-tablet, 16px); --ds-pg-mx: var(--size-page-margin-tablet, 24px); --ds-pg-my: var(--size-page-margin-block-tablet, 16px); --ds-pg-cols: 8; }
+  .ds-page-grid__col { grid-column: span var(--span-t, 8); }
+}
+@media (min-width: 1024px) {
+  .ds-page-grid { --ds-pg-gut: var(--size-grid-gutter-desktop, 24px); --ds-pg-mx: var(--size-page-margin-desktop, 32px); --ds-pg-my: var(--size-page-margin-block-desktop, 24px); --ds-pg-cols: 12; }
+  .ds-page-grid--dense { --ds-pg-gut: var(--size-grid-gutter-desktop-dense, 8px); --ds-pg-mx: var(--size-page-margin-desktop-dense, 8px); --ds-pg-my: var(--size-page-margin-block-desktop-dense, 8px); }
+  .ds-page-grid__col { grid-column: span var(--span, 12); }
+}

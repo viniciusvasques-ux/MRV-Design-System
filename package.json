@@ -1,0 +1,44 @@
+{
+  "name": "@mrvco/design-system-react",
+  "version": "0.1.0",
+  "description": "Componentes React do Design System MRV&CO (camada sobre os estilos ds-* do pacote CSS)",
+  "type": "module",
+  "sideEffects": [
+    "*.css"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build:css": "node scripts/build-css.mjs",
+    "build:js": "esbuild src/index.ts --bundle --packages=external --format=esm --jsx=automatic --target=es2020 --outfile=dist/index.js",
+    "build:types": "tsc -p tsconfig.json --emitDeclarationOnly --declaration --outDir dist",
+    "build": "npm run build:css && npm run build:js && npm run build:types",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "demo": "node scripts/build-demo.mjs"
+  },
+  "peerDependencies": {
+    "react": ">=17",
+    "react-dom": ">=17"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "esbuild": "^0.24.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.6.0"
+  },
+  "license": "UNLICENSED"
+}
